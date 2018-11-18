@@ -1,4 +1,6 @@
---Readme document for *author(s)*, *email(s)*, *UCI id(s)*--
+--Readme document for Kyle Mamiit & Alex Tran, kmamiit@uci.edu & , kmamiit & --
+
+Assignment Group 20 on Canvas
 
 1. How long, in hours, did it take you to complete this assignment?
 
