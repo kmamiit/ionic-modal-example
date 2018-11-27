@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>modal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  {{val}}
+  <ion-button (click)="dismiss()">Dismiss</ion-button>
+
+  <ion-segment [(ngModel)]="type" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="day" checked>Day</ion-segment-button>
+    <ion-segment-button value="overnight">Overnight</ion-segment-button>
+  </ion-segment>
+  
+  <h2>What time did you approximately sleep?</h2>
+  <ion-item>
+    <ion-label>Date</ion-label>
+    <ion-datetime [(ngModel)]="dateSlept" (ionChange)="dateChanged($event)" displayFormat="MMMM D" placeholder="Select Date"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Time</ion-label>
+    <ion-datetime [(ngModel)]="timeSlept" (ionChange)="timeChanged($event)" displayFormat="h:mm A" placeholder="Select Time"></ion-datetime>
+  </ion-item>
+
+  <h2>What time did you approximately wake up?</h2>
+  <ion-item>
+    <ion-label>Date</ion-label>
+    <ion-datetime [(ngModel)]="dateWoke" (ionChange)="dateChanged($event)" displayFormat="MMMM D" placeholder="Select Date"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Time</ion-label>
+    <ion-datetime [(ngModel)]="timeWoke" (ionChange)="timeChanged($event)" displayFormat="h:mm A" placeholder="Select Time"></ion-datetime>
+  </ion-item>
+
+</ion-content>
